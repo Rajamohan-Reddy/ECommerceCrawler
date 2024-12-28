@@ -1,0 +1,73 @@
+
+
+
+POST http://localhost:3000/register
+Content-Type : application/json
+
+{
+    "username" : "krishna",
+    "password" : "krishna@2021",
+    "gender" : "male",
+    "name" : "krishnareddy"
+}
+
+POST http://localhost:3000/login
+Content-Type : application/json
+
+{
+    "username" : "krishna",
+    "password" : "krishna@2021"
+}
+
+
+GET http://localhost:3000/domains/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+####
+
+
+GET http://localhost:3000/domains/1/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+
+GET http://localhost:3000/product/url/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+GET http://localhost:3000/product/url/1/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+
+GET http://localhost:3000/domain/product/url/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+
+POST http://localhost:3000/domain/crawl/ 
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+Content-Type: application/json
+
+{
+    "domain" : "Etsy.com"
+}
+
+POST http://localhost:3000/product/url/crawl/ 
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+Content-Type: application/json
+{
+    "domainId" : 13,
+    "url" :"https://www.etsy.com/in-en/listing/1806153851/personalized-babys-first-ride-on-toy?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=baby+gift&ref=sr_gallery-1-23&pro=1&etp=1&sts=1&content_source=a9896a1aea2c0a7bcb2e92557a6e4b45bfd5f414%253A1806153851&search_preloaded_img=1&organic_search_click=1"
+}
+
+###
+
+DELETE http://localhost:3000/product/url/5/23
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+
+
+GET http://localhost:3000/domains/1
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobmEiLCJpYXQiOjE3MzUzMjcyOTl9.ikuhaXV8ZapsQDyWPlrq4AyGkzI33BCDRY3jnqY-5-U
+###
+
+
+
+
+
